@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/miostile.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images.png" alt="" width="45" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#">Emulatori</a>
+                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link disabled">Sign-In</a>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="WZLOGO.png" alt="" width="20" height="20">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Form-->
+    <div class="simpleBoxSI container-fluid" id="searchCar">
+        <div class="row">
+            <div class="col">
+                <form method="post" action="controller.php" name="reg">
+                    <fieldset>
+                        <legend class="card-title">SIGN-IN</legend>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex">
+                                    <span class="label-form-field">Nome</span>
+                                    <input id="form-name" class="form-input-style" type="text" name="nome"
+                                        placeholder="Inserisci il nome" onblur="validate_generic(this)">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex">
+                                    <span class="label-form-field">Cognome</span>
+                                    <input class="form-input-style" required type="text" name="cognome" id="surname"
+                                        placeholder="Inserisci il cognome" onblur="validate_generic(this)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row padding-form">
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-6">
+                                        <div class="form-field-flex">
+                                            <span class="label-form-field">CF</span>
+                                            <input class="form-input-style" required type="text" name="cf" id="cf"
+                                                placeholder="codice fiscale"
+                                                onblur="validate_generic(this);validate_specific(this);">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <input class="form-input-style" required name="Comune" id="Comune" onblur="validate_generic(this)">                                       
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <button id="redbutton" class="buttonform" onclick="ShowInput()">Genera</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-6">
+                                <div class="form-field-flex">
+                                    <span class="label-form-field">Nazione</span>
+                                    <select class="form-select-style" required name="Nazione"
+                                        onblur="validate_generic(this)">
+                                        <option value="">Nazione</option>
+                                        <option value="Italia">Italia</option>
+                                        <option value="Olanda">Olanda</option>
+                                        <option value="Inghilterra">Inghilterra</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row padding-form">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex gender-field">
+                                    <span class="label-form-field" id="label-form-fieldg">Sesso</span>
+                                    <div id="sessomf">
+                                        <div class="radio-button-style spacingmf"><span class="label-form-field" id="label-form-fieldg">M</span><input
+                                                required type="radio" name="sesso" value="M" id="male"></div>
+
+                                        <div class="radio-button-style spacingmf"><span class="label-form-field" id="label-form-fieldg">F</span><input
+                                                required type="radio" name="sesso" value="F" id="female"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">Data di nascita:</span>
+                                    <input class="form-input-style" required type="date" name="data_di_nascita" id="data_di_nascita"
+                                        onblur="validate_generic(this);underAgeValidate(this);">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row padding-form">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">user</span>
+                                    <input class="form-input-style" required type="text" name="user"
+                                        placeholder="Username" onblur="validate_generic(this);validate_specific(this);">
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">email</span>
+                                    <input id="form-email" class="form-input-style" required type="email" name="Email"
+                                        placeholder="E-mail" onblur="validate_generic(this)">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row padding-form">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">Password</span>
+                                    <input class="form-input-style" required type="password" name="password"
+                                        placeholder="Inserisci la password" id="form-password"
+                                        onblur="validate_generic(this);validate_specific(this);">
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"><span class="label-form-field">Conferma Password</span>
+                                    <input class="form-input-style" required type="password" name="confermaPassword"
+                                        placeholder="Conferma la password" id="confermaPassword"
+                                        onblur="validate_generic(this)">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row padding-form">
+                            <div class="col-6">
+                                <button type="reset" class="buttonform">CANCELLA</button>
+                            </div>
+
+
+                            <div class="col-6">
+                                <button type="submit" id="submit-form-button" class="buttonform">REGISTRATI</button>
+                            </div>
+                        </div>
+
+
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="row" id="footerrow">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h5>Trovateci sui social</h5>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="f-letter-logo-png-1571.png" alt="" width="18" height="18">
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="logo-twitter-png-5860.png" alt="" width="18" height="18">
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="logo-instagram-png-2434.png" alt="" width="18" height="18">
+                    </button>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="tik-tok-logo-33095.png" alt="" width="18" height="18">
+
+                    </button>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Iscriviti alla newsletter!</h5>
+                    <form>
+                        <input type="text" placeholder="email@gmail.com">
+                        <button type="button" class="btn btn-danger" id="searchButton">Agree</button>
+                    </form>
+
+                </div>
+
+                <div class="footer-section">
+                    <h5>Mettetevi in contatto!</h5>
+                    <p>+39 3773748920</p>
+                    <p>simoneadaldo@outlook.it</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/mioscript.js"></script>
+</body>
+
+</html>

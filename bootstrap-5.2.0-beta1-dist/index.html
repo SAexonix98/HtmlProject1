@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/miostile.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images.png" alt="" width="45" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="LogIn.html">LogIn</a>
+          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="SignIn.html">SignIn</a>
+          <button type="button" class="btn btn-outline-warning">
+            <img src="WZLOGO.png" alt="" width="20" height="20">
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--Carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+          <p>Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per affrontare il
+            nemico finale: la recensione di Diablo Immortal.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--1section-->
+  <div class="simpleBox" id="textPresentation">
+    <span class="simplebox-title">GamesMagazine</span>
+    <span id="description">Dedicato cervello e anima a tutti quelli che i videogiochi li hanno nel sangue,
+      GamesMagazine.it è il punto di riferimento italiano per l'intrattenimento del presente e del futuro.
+      Preparatevi ad essere stupiti ogni giorno con articoli, news,live e produzioni geniali.</span>
+  </div>
+
+
+  <!--Form-->
+  <div class="simpleBox container-fluid" id="searchCar">
+    <p>Choose a Game</p>
+    <div class="row justify-content-around" id="searchBoxes">
+      <select class="col-md-5" id="tipo">
+        <option value="GAME">Game</option>
+      </select>
+      <select class="col-md-5" id="modello">
+        <option value="PC">Platform</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-danger" id="searchButton">Submit</button>
+  </div>
+
+
+  <!--2section-->
+  <div class="simpleBox textOnly">
+    <span>LE NOSTRE NEWS</span>
+  </div>
+
+
+  <!--Cards-->
+  <div>
+    <div class="rowcard">
+      <div class="card-group">
+        <div class="card-container col-sm-6 col-md-3 col-lg-4 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card1</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card-container col-sm-6 col-md-3 col-lg-4 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card2</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card-container col-sm-6 col-md-3 col-lg-4 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card3</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card-container col-sm-6 col-md-3 col-lg-4 d-lg-block d-none d-md-block d-sm-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card4</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-none col-lg-4 d-lg-block d-sm-none d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card5</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-none col-lg-4 d-lg-block d-sm-none d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container">
+              <p>card6</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+          <div class="card-footer d-lg-block d-md-none d-sm-none d-none">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <img style="width: 10%;" src="youtube-logo.png">
+            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--3section-->
+  <div class="simpleBox textOnly">
+    <span>Gameplay</span>
+  </div>
+
+
+  <!--Cards2-->
+  <div>
+    <div class="rowcard">
+      <div class="card-group">
+        <div class="card-container col-sm-6 col-md-4 col-lg-3 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container2">
+              <p>card1</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+        </div>
+        <div class="card-container col-sm-6 col-md-4 col-lg-3 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container2">
+              <p>card2</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-3 d-lg-block d-none d-md-block d-sm-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container2">
+              <p>card3</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-3 d-lg-block d-none d-sm-block d-md-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+            <div class="card-label-container2">
+              <p>card4</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal, la recensione del mobile game più controverso di sempre</h5>
+            <p class="card-text">Il momento è giunto. A quasi un mese dal lancio globale,ci sentiamo ormai pronti per
+              affrontare il
+              nemico finale: la recensione di Diablo Immortal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--4section-->
+  <div class="simpleBox textOnly">
+    <span>Offerte Lampo</span>
+  </div>
+
+
+  <!--Cards3-->
+  <div>
+    <div class="rowcard">
+      <div class="card-group">
+        <div class="card-container col-sm-6 col-md-4 col-lg-2 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+        <div class="card-container col-sm-6 col-md-4 col-lg-2 d-lg-block">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-2 d-lg-block d-md-block d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-2 d-lg-block d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-2 d-lg-block d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+        <div class="card-container col-12 col-sm-6 col-md-4 col-lg-2 d-lg-block d-none">
+          <div class="card-img">
+            <img src="https://images5.alphacoders.com/112/thumb-1920-1126803.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Diablo Immortal</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h5>Trovateci sui social</h5>
+        <button type="button" class="btn btn-outline-warning">
+          <img src="f-letter-logo-png-1571.png" alt="" width="18" height="18">
+        </button>
+        <button type="button" class="btn btn-outline-warning">
+          <img src="logo-twitter-png-5860.png" alt="" width="18" height="18">
+        </button>
+        <button type="button" class="btn btn-outline-warning">
+          <img src="logo-instagram-png-2434.png" alt="" width="18" height="18">
+        </button>
+        </button>
+        <button type="button" class="btn btn-outline-warning">
+          <img src="tik-tok-logo-33095.png" alt="" width="18" height="18">
+        </button>
+      </div>
+
+      <div class="footer-section">
+        <h5>Iscriviti alla newsletter!</h5>
+        <form>
+          <input type="text" placeholder="email@gmail.com">
+          <button type="button" class="btn btn-danger" id="searchButton">Agree</button>
+        </form>
+
+      </div>
+      <div class="footer-section">
+        <h5>Mettetevi in contatto!</h5>
+        <p>+39 3773748920</p>
+        <p>simoneadaldo@outlook.it</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

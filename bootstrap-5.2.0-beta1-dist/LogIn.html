@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/miostile.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images.png" alt="" width="45" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="LogIn.html">LogIn</a>
+                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="SignIn.html">SignIn</a>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="WZLOGO.png" alt="" width="20" height="20">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--LOGINForm-->
+    <div class="simpleBoxSI container-fluid" id="searchCar">
+        <div class="row">
+            <div class="col">
+                <form method="post" action="controller.php" name="reg">
+                    <fieldset>
+                        <legend class="card-title">LOG-IN</legend>
+                        <div class="row padding-form">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">user</span>
+                                    <input class="form-input-style" required type="text" name="user"
+                                        placeholder="Username" onblur="validate_generic(this);validate_specific(this);">
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-field-flex"> <span class="label-form-field">Password</span>
+                                    <input class="form-input-style" required type="password" name="password"
+                                        placeholder="Inserisci la password" id="form-password"
+                                        onblur="validate_generic(this);validate_specific(this);">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row padding-form">
+                            <div class="col-6">
+                                <button type="reset" class="buttonform">DELETE</button>
+                            </div>
+
+
+                            <div class="col-6">
+                                <button type="submit" id="submit-form-button" class="buttonform">LOGIN</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="row" id="footerrow">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h5>Trovateci sui social</h5>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="f-letter-logo-png-1571.png" alt="" width="18" height="18">
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="logo-twitter-png-5860.png" alt="" width="18" height="18">
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="logo-instagram-png-2434.png" alt="" width="18" height="18">
+                    </button>
+                    </button>
+                    <button type="button" class="btn btn-outline-warning">
+                        <img src="tik-tok-logo-33095.png" alt="" width="18" height="18">
+
+                    </button>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Iscriviti alla newsletter!</h5>
+                    <form>
+                        <input type="text" placeholder="email@gmail.com">
+                        <button type="button" class="btn btn-danger" id="searchButton">Agree</button>
+                    </form>
+
+                </div>
+
+                <div class="footer-section">
+                    <h5>Mettetevi in contatto!</h5>
+                    <p>+39 3773748920</p>
+                    <p>simoneadaldo@outlook.it</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/miojquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/mioscript.js"></script>
+</body>
+
+</html>
